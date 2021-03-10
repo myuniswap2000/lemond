@@ -1,0 +1,1309 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/FakeCDai.sol": {
+      "lastModificationDate": 1615217315217,
+      "contentHash": "27705165f9cabb66860793ee6fea29c5",
+      "sourceName": "contracts/Compound/FakeCDai.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./src/CErc20.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "FakeCDai"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/CErc20.sol": {
+      "lastModificationDate": 1615217315218,
+      "contentHash": "7cbc1ff1723835741389be1d3be07049",
+      "sourceName": "contracts/Compound/src/CErc20.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ComptrollerInterface.sol",
+        "./CToken.sol",
+        "./EIP20Interface.sol",
+        "./EIP20NonStandardInterface.sol",
+        "./InterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "CErc20"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/ComptrollerInterface.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "20e933a7dd72ebad6784e97537a77523",
+      "sourceName": "contracts/Compound/src/ComptrollerInterface.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "ComptrollerInterface"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/CToken.sol": {
+      "lastModificationDate": 1615217315218,
+      "contentHash": "565275ff06002e37bf30a6450e2711db",
+      "sourceName": "contracts/Compound/src/CToken.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ComptrollerInterface.sol",
+        "./EIP20Interface.sol",
+        "./Exponential.sol",
+        "./ErrorReporter.sol",
+        "./InterestRateModel.sol",
+        "./ReentrancyGuard.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "CToken"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/EIP20Interface.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "f573459c4ebc6fbb963949cfb2732752",
+      "sourceName": "contracts/Compound/src/EIP20Interface.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "EIP20Interface"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/EIP20NonStandardInterface.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "c01920b9a25722c60d507fc1fa848018",
+      "sourceName": "contracts/Compound/src/EIP20NonStandardInterface.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "EIP20NonStandardInterface"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/InterestRateModel.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "e2f0471d987efe14b24733f00df91389",
+      "sourceName": "contracts/Compound/src/InterestRateModel.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "InterestRateModel"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/Exponential.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "185b15cf106c102de3f66024f295d5a7",
+      "sourceName": "contracts/Compound/src/Exponential.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CarefulMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "Exponential"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/ErrorReporter.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "e78b125933a8797c343132afec51f17b",
+      "sourceName": "contracts/Compound/src/ErrorReporter.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "ComptrollerErrorReporter",
+        "TokenErrorReporter"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/ReentrancyGuard.sol": {
+      "lastModificationDate": 1615217315220,
+      "contentHash": "b879929c8f1b34ef310b228743fe9ada",
+      "sourceName": "contracts/Compound/src/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/CarefulMath.sol": {
+      "lastModificationDate": 1615217315218,
+      "contentHash": "9c158176087b1ad838b9298b83e23d93",
+      "sourceName": "contracts/Compound/src/CarefulMath.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "CarefulMath"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/CEther.sol": {
+      "lastModificationDate": 1615217315218,
+      "contentHash": "928f489656f4274235607ad66fdf11d5",
+      "sourceName": "contracts/Compound/src/CEther.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ComptrollerInterface.sol",
+        "./CToken.sol",
+        "./InterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "CEther"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/ComptrollerStorage.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "cab6589e759c163b693123c1aae5a72e",
+      "sourceName": "contracts/Compound/src/ComptrollerStorage.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CToken.sol",
+        "./PriceOracle.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "ComptrollerV1Storage",
+        "UnitrollerAdminStorage"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/PriceOracle.sol": {
+      "lastModificationDate": 1615217315220,
+      "contentHash": "ad778126acfee11f3546af3ee75e241b",
+      "sourceName": "contracts/Compound/src/PriceOracle.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "PriceOracle"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/Unitroller.sol": {
+      "lastModificationDate": 1615217315220,
+      "contentHash": "0c31a85d39c4a7c0b759b539279a6e73",
+      "sourceName": "contracts/Compound/src/Unitroller.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ErrorReporter.sol",
+        "./ComptrollerStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "Unitroller"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/Comptroller.sol": {
+      "lastModificationDate": 1615217315219,
+      "contentHash": "051f36301586e2d7f1d1629fb380d2e1",
+      "sourceName": "contracts/Compound/src/Comptroller.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./CToken.sol",
+        "./ErrorReporter.sol",
+        "./Exponential.sol",
+        "./PriceOracle.sol",
+        "./ComptrollerInterface.sol",
+        "./ComptrollerStorage.sol",
+        "./Unitroller.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "Comptroller"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/src/WhitePaperInterestRateModel.sol": {
+      "lastModificationDate": 1615217315220,
+      "contentHash": "be42a3b32577dd817e4fa11a8279933b",
+      "sourceName": "contracts/Compound/src/WhitePaperInterestRateModel.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Exponential.sol",
+        "./InterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "WhitePaperInterestRateModel"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/FakeCEtherInterestRateModel.sol": {
+      "lastModificationDate": 1615217315217,
+      "contentHash": "1094f37db2e943a14d8824629e2f6ae0",
+      "sourceName": "contracts/Compound/FakeCEtherInterestRateModel.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./src/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "FakeCEtherInterestRateModel"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/FakeCDaiInterestRateModel.sol": {
+      "lastModificationDate": 1615217315217,
+      "contentHash": "9b6dcdfcb9db296197723fb0128fbebb",
+      "sourceName": "contracts/Compound/FakeCDaiInterestRateModel.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./src/WhitePaperInterestRateModel.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "FakeCDaiInterestRateModel"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/FakeComptroller.sol": {
+      "lastModificationDate": 1615217315218,
+      "contentHash": "ccdb65a195d61757908c55c706bd6d90",
+      "sourceName": "contracts/Compound/FakeComptroller.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./src/Comptroller.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "FakeComptroller"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Compound/FakeCEther.sol": {
+      "lastModificationDate": 1615217315217,
+      "contentHash": "8cfa1b1c5fdc583d7bfc4f62b8396e50",
+      "sourceName": "contracts/Compound/FakeCEther.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./src/CEther.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.8"
+      ],
+      "artifacts": [
+        "FakeCEther"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/FakeDai.sol": {
+      "lastModificationDate": 1615217315220,
+      "contentHash": "49f8d21cb14dc6f5b4d0ee949a46836f",
+      "sourceName": "contracts/FakeDai.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.2"
+      ],
+      "artifacts": [
+        "FakeDai"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1615043455677,
+      "contentHash": "22fd452b5721fdbf411ef554c2c80b76",
+      "sourceName": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/openzeppelin-solidity/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1615043454058,
+      "contentHash": "32a66f6f4d0584b403f26f8e5e4d17b5",
+      "sourceName": "openzeppelin-solidity/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1615043455677,
+      "contentHash": "183ff1f5e5f04bcfa85cee597bcb0236",
+      "sourceName": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1615043454068,
+      "contentHash": "d208da96b6f6c1d204ee8248087cf2d7",
+      "sourceName": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Token/LEMD.sol": {
+      "lastModificationDate": 1615350517762,
+      "contentHash": "ac949b852654328bbb38d6d8a919f841",
+      "sourceName": "contracts/Token/LEMD.sol",
+      "solcConfig": {
+        "version": "0.5.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.8",
+        "0.5.8"
+      ],
+      "artifacts": [
+        "Address",
+        "Context",
+        "ERC20",
+        "ERC20Detailed",
+        "IERC20",
+        "LEMD",
+        "SafeERC20",
+        "SafeMath"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Pool/IRewardDistributionRecipient.sol": {
+      "lastModificationDate": 1615373503618,
+      "contentHash": "6613b0726e0427834b12fcad0f08b6b5",
+      "sourceName": "contracts/Pool/IRewardDistributionRecipient.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IRewardDistributionRecipient"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1615347421618,
+      "contentHash": "6748815a5b45c4aeeda56819f41190e0",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1615347421621,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/contracts/Pool/OKTPool.sol": {
+      "lastModificationDate": 1615394157636,
+      "contentHash": "4b29fce8649d396b8244ea8dbda42a90",
+      "sourceName": "contracts/Pool/OKTPool.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/Math.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "./IRewardDistributionRecipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC20Decimals",
+        "OKTPool",
+        "TokenWrapper"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/math/Math.sol": {
+      "lastModificationDate": 1615347421620,
+      "contentHash": "e5c844515b04deabacef7eb872abc384",
+      "sourceName": "@openzeppelin/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1615347421620,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1615347421623,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1615347424977,
+      "contentHash": "33e22842646d746e5c4124c2fdc051aa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/aemoe/Desktop/Lemond/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1615347424976,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.2",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    }
+  }
+}

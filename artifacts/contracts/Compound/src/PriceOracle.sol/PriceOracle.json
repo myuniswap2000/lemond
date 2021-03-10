@@ -1,0 +1,44 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PriceOracle",
+  "sourceName": "contracts/Compound/src/PriceOracle.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isPriceOracle",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "cToken",
+          "type": "address"
+        }
+      ],
+      "name": "getUnderlyingPrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

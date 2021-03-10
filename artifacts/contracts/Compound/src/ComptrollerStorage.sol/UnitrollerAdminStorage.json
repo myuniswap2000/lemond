@@ -1,0 +1,67 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UnitrollerAdminStorage",
+  "sourceName": "contracts/Compound/src/ComptrollerStorage.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "pendingAdmin",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "comptrollerImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "pendingComptrollerImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060e78061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c80632678224714604b578063bb82aa5e14606d578063dcfbc0c7146073578063f851a440146079575b600080fd5b6051607f565b604080516001600160a01b039092168252519081900360200190f35b6051608e565b6051609d565b605160ac565b6001546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b031681565b6000546001600160a01b03168156fea165627a7a723058206768278f73827a5e893733cd4648989ce087e821b3af1a429ce8a65d4c59f1c40029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c80632678224714604b578063bb82aa5e14606d578063dcfbc0c7146073578063f851a440146079575b600080fd5b6051607f565b604080516001600160a01b039092168252519081900360200190f35b6051608e565b6051609d565b605160ac565b6001546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b031681565b6000546001600160a01b03168156fea165627a7a723058206768278f73827a5e893733cd4648989ce087e821b3af1a429ce8a65d4c59f1c40029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
