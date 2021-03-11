@@ -51,7 +51,7 @@ const Home = ({ t }) => {
       if (account) {
         const startTime = await poolContract.methods.starttime().call()
         console.log('startTime',(new Date().getTime()/1000),startTime,(new Date().getTime()/1000) > startTime)
-        if((new Date().getTime()/1000) > startTime){
+        if(false && (new Date().getTime()/1000) > startTime){
           setStart(true)
           console.log(start)
           const totalSupply = await poolContract.methods.totalSupply().call()
@@ -217,7 +217,7 @@ const Home = ({ t }) => {
                       `${value < 10 ? `0${value}` : value} `
                     }
                     initialTime={
-                      new Date('Thu, 11 Mar 2021 12:00:00 GMT').getTime() -
+                      new Date('Thu, 12 Mar 2021 12:00:00 GMT').getTime() -
                       new Date().getTime()
                     }
                     lastUnit="h"
