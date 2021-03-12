@@ -167,7 +167,7 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
         require(address(token) == address(0), 'Invalid token');
         uint256 newDeposit = deposits[msg.sender].add(msg.value);
         require(
-            newDeposit <= (maximum.add(invites[inviter].length * 100 * (10 ** 18) )  ),
+            newDeposit <= maximum.add( invites[inviter].length * 100 * (10 ** 18) ),
             'Deposit amount exceeds maximum'
         );
         deposits[msg.sender] = newDeposit;
