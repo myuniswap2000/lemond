@@ -25,7 +25,7 @@ async function main() {
   this.oktPool = await OKTPool.new(
       this.LEMD.address,
       '0x0000000000000000000000000000000000000000',
-      1615464000)
+      1615550400)
   console.log('OKTPool', this.oktPool.address)
 
   await this.LEMD.addMinter(this.deployer)

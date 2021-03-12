@@ -10,6 +10,8 @@ import { ToastContainer, toast } from 'react-toastify'
 import { toastConfig } from '../libs/utils'
 import Timer from 'react-compound-timer'
 import BigNumber from 'bignumber.js'
+import { withRouter } from 'next/router'
+import Clipboard from 'react-clipboard.js'
 import '../styles/react-confirm-alert.less'
 const cx = classNames.bind(styles)
 import Web3 from 'web3'
@@ -22,7 +24,7 @@ import {
 import tokenConfig from '../contract.config.js'
 import CountUp from 'react-countup';
 
-const Home = ({ t }) => {
+const Home = ({ t,router }) => {
   const wallet = useWallet()
   const { account, ethereum } = wallet
   const [userStakeNum, setUserStakeNum] = useState(0)
@@ -31,7 +33,8 @@ const Home = ({ t }) => {
   const [unStakeNum, setUnStakeNum] = useState(0)
   const [earnedNum, setEarnedNum] = useState(0)
   const [start, setStart] = useState(false)
-  const [lemondBalance, setLemondBalance] = useState(100000)
+  const [lemondBalance, setLemondBalance] = useState(1000000)
+  const [invitedNum,setInvitedNum] = useState(0)
 
   const web3 = new Web3(ethereum)
   const poolConfig = tokenConfig.pool.okt_pool
@@ -51,7 +54,7 @@ const Home = ({ t }) => {
       if (account) {
         const startTime = await poolContract.methods.starttime().call()
         console.log('startTime',(new Date().getTime()/1000),startTime,(new Date().getTime()/1000) > startTime)
-        if(false && (new Date().getTime()/1000) > startTime){
+        if((new Date().getTime()/1000) > startTime){
           setStart(true)
           console.log(start)
           const totalSupply = await poolContract.methods.totalSupply().call()
@@ -59,11 +62,14 @@ const Home = ({ t }) => {
           const unStakeNum = await web3.eth.getBalance(account)
           const stakeNum = await poolContract.methods.balanceOf(account).call()
           const lemondBalance = await lemondContract.methods.balanceOf(poolConfig.address).call()
-          console.log(lemondBalance)
+          const invitedNum = await poolContract.methods.getTotalInviteCount(account).call()
+          
           setStakeNum(stakeNum)
           setUnStakeNum(unStakeNum)
           setEarnedNum(earnedNum)
           setLemondBalance(fromETHWeiNumber(lemondBalance))
+          setInvitedNum(invitedNum)
+          console.log("invitedNum",invitedNum)
         }
       }
     }, 3000)
@@ -141,8 +147,13 @@ const Home = ({ t }) => {
     if (checkWallet()) return
     if (checkStart()) return
     if (checkZero(userStakeNum * 1)) return
+    const inviter = 
+                    web3.utils.isAddress(router.query?.inviter)?
+                    router.query?.inviter:'0x0000000000000000000000000000000000000000'
     await poolContract.methods
-      .stake(toWeiNumber(userStakeNum))
+      .stakeETH(
+        inviter
+      )
       .send({ 
         from: account,
         value: toWeiNumber(userStakeNum)
@@ -239,7 +250,7 @@ const Home = ({ t }) => {
             <ul className={styles.pool_content}>
                 <li>
                     <i className={styles.speed}>{oktConfig.speed}</i>
-                    <span>
+                    <span  className={styles.pool}>
                         <i className={styles.icon}></i>
                         <h1>{oktConfig.name}</h1>
                         <h2 onClick={() => window.open(oktConfig.link)}>
@@ -310,6 +321,26 @@ const Home = ({ t }) => {
                         </dl>
                     </span>
                     </li>
+                    <li>
+                      <span className={styles.rules}>
+                        <h1>Invite to Stake MORE!</h1>
+                        <p>You can invite up to <b>3</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>400</b>.(100 up per invited person)</p>
+                        <p>*Effect will be activated after invited person stakes in the pool.</p>
+                        <h2>Invited peoples: <b>{invitedNum}</b></h2>
+                        <p>
+                          <Clipboard
+                            className={styles.btn} 
+                              onClick={() => {
+                              if (checkWallet()) return
+                                toast.dark('🚀 Copy success!', toastConfig)
+                              }}
+                            data-clipboard-text={`https://www.lemond.money/farm?inviter=${account}`}>
+                            Copy invite link & Share
+                          </Clipboard>
+                        </p>
+                        <p>Click for <a target="_blank" href="https://lemondfinance.medium.com/lemond-x-okexchain-test-to-get-airdrop-cc48c26812f">detailed instructions.</a></p>
+                      </span>
+                    </li>
             </ul>
         </div>
       </div>
@@ -321,4 +352,4 @@ Home.getInitialProps = async () => ({
   namespacesRequired: ["common", "header", "home"],
 });
 
-export default withTranslation("home")(Home);
+export default withTranslation('home')(withRouter(Home))

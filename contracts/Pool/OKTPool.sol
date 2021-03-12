@@ -55,7 +55,7 @@ interface IERC20Decimals {
 
 contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
     IERC20 public Lemd;
-    uint256 public DURATION = 14 days; 
+    uint256 public DURATION = 8 days; 
     uint256 public decimals = 18;
     uint256 public starttime;
     uint256 public periodFinish = 0;
@@ -66,6 +66,7 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
     mapping(address => uint256) public userRewardPerTokenPaid;
     mapping(address => uint256) public rewards;
     mapping(address => uint256) public deposits;
+    mapping(address => address[]) public invites;
 
     event RewardAdded(uint256 reward);
     event Staked(address indexed user, uint256 amount);
@@ -83,7 +84,7 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
         if(token_ != address(0)) {
             decimals = IERC20Decimals(token_).decimals();
         }
-        maximum = 2000 * (10 ** decimals);
+        maximum = 100 * (10 ** decimals);
     }
 
     modifier checkStart() {
@@ -156,7 +157,7 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
 
 
     // stake visibility is public as overriding LPTokenWrapper's stake() function
-    function stakeETH()
+    function stakeETH(address inviter)
         public
         payable
         updateReward(msg.sender)
@@ -166,12 +167,27 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
         require(address(token) == address(0), 'Invalid token');
         uint256 newDeposit = deposits[msg.sender].add(msg.value);
         require(
-            newDeposit <= maximum,
+            newDeposit <= (maximum.add(invites[inviter].length * 100 * (10 ** 18))),
             'Deposit amount exceeds maximum'
         );
         deposits[msg.sender] = newDeposit;
         super.stake(msg.value);
+        if(inviter != address(0) && inviter != msg.sender  && invites[inviter].length <= 3){
+            bool alreadyHave = false;
+            for(uint256 i = 0 ; i < invites[inviter].length; i++){
+                if(invites[inviter][i] == inviter){
+                    alreadyHave = true;
+                }
+            }
+            if(!alreadyHave){
+                invites[inviter].push(msg.sender);
+            }
+        }
         emit Staked(msg.sender, msg.value);
+    }
+
+    function getTotalInviteCount(address inviter) public view returns (uint256) {
+        return invites[inviter].length;
     }
 
     function withdraw(uint256 amount)
