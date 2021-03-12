@@ -325,7 +325,7 @@ const Home = ({ t,router }) => {
                       <span className={styles.rules}>
                         <h1>Airdrop Episode I</h1>
                         <p>Total LEMD to be airdropped : <b>1,000,000 LEMD</b><br/>
-                        Period of airdrop: <b>12.00 UTC, Mar 12 to 12.00 UTC, Mar 20</b>
+                        Period of airdrop: <b>12.00 UTC, Mar 12 to 12.00 UTC, Mar 22</b>
                         </p>
 
                         <h1>Invite to Stake MORE!</h1>
