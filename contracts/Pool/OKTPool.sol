@@ -55,7 +55,7 @@ interface IERC20Decimals {
 
 contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
     IERC20 public Lemd;
-    uint256 public DURATION = 14 days; 
+    uint256 public DURATION = 10 days; 
     uint256 public decimals = 18;
     uint256 public starttime;
     uint256 public periodFinish = 0;

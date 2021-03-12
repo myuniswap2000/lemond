@@ -323,6 +323,11 @@ const Home = ({ t,router }) => {
                     </li>
                     <li>
                       <span className={styles.rules}>
+                        <h1>Airdrop Episode I</h1>
+                        <p>Total LEMD to be airdropped : <b>1,000,000 LEMD</b><br/>
+                        Period of airdrop: <b>12.00 UTC, Mar 12 to 12.00 UTC, Mar 20</b>
+                        </p>
+
                         <h1>Invite to Stake MORE!</h1>
                         <p>You can invite up to <b>3</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>400</b>.(100 up per invited person)</p>
                         <p>*Effect will be activated after invited person stakes in the pool.</p>

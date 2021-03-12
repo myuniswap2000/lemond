@@ -15,13 +15,13 @@ export default {
   },
   token: {
     lemond: {
-      address: '0x69267aa879f0CFce6FE906579258e56cAD6a1E1F',
+      address: '0xE667d8bD182D165D2E71cF72315bD117f6940094',
       abi: lemond
     }
   }, 
   pool: {
     okt_pool: {
-      address: '0x9a00A2a6d1b7DE4b59CbFBB69C960Ce23dD9F341',
+      address: '0x6eF0adF5dB077FE8A69f94D25e4EF29a0726e779',
       abi: oktPool
     }
   }
