@@ -32,7 +32,7 @@ module.exports = {
       allowUnlimitedContractSize: true,
     },
     okexchain: {
-      url: 'https://exchaintest.okexcn.com',
+      url: 'https://exchaintest.okexcn.com/',
       accounts: [mnemonic]
     },
     rinkeby: {
