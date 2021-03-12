@@ -55,7 +55,7 @@ interface IERC20Decimals {
 
 contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
     IERC20 public Lemd;
-    uint256 public DURATION = 8 days; 
+    uint256 public DURATION = 14 days; 
     uint256 public decimals = 18;
     uint256 public starttime;
     uint256 public periodFinish = 0;
@@ -167,7 +167,7 @@ contract OKTPool is TokenWrapper, IRewardDistributionRecipient {
         require(address(token) == address(0), 'Invalid token');
         uint256 newDeposit = deposits[msg.sender].add(msg.value);
         require(
-            newDeposit <= (maximum.add(invites[inviter].length * 100 * (10 ** 18))),
+            newDeposit <= maximum.add( invites[inviter].length * 100 * (10 ** 18) ),
             'Deposit amount exceeds maximum'
         );
         deposits[msg.sender] = newDeposit;
