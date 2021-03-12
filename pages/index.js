@@ -61,9 +61,9 @@ const Home = ({ t }) => {
             <div className={styles.airdrop_box}></div>
             <h1><i></i><span>Lemond AirDrop</span></h1>
             <h2>Lemond Airdrop</h2>
-            <p><b>Lemond Airdrop</b> Carnival is about to start.</p>
-            <p>Suit up for our <b>Juicy Candies.</b></p>
-            <p>Stay Tuned!</p>
+            <p>Besides <b>OKExChain</b> testing bounty. <b>Lemond</b> is also holding Airdrop Carnival to get your bag served.</p>
+            <p>Massive of <b>$LEMD</b> in the box!</p>
+            <p>Suit up for our Juicy Candies.</p>
             <p className={styles.btns}>Episode ① <Link href="/farm"><button>Get Airdrop >></button></Link> </p>
             <p className={styles.btns}>Episode ② <button disabled>Comming soon</button> </p>
             <p className={styles.btns}>Episode ③ <button disabled>Comming soon</button> </p>

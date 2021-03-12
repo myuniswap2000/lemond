@@ -44,6 +44,7 @@
     "nodemon": "^2.0.6",
     "numeral": "^2.0.6",
     "openzeppelin-solidity": "^2.5.1",
+    "react-clipboard.js": "^2.0.16",
     "react-toastify": "^7.0.3"
   }
 }

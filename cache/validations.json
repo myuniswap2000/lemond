@@ -164,6 +164,2166 @@
       },
       "OKTPool": {
         "version": {
+          "withMetadata": "0955fd99d56cc20aab02a662beac5364e50b6d9fa0f05381ffd854c07ccf1319",
+          "withoutMetadata": "1c0d8afe0124d1dd1ad60abe1a81033d58599726d67a68d0cd0eb34305c4e223",
+          "linkedWithoutMetadata": "1c0d8afe0124d1dd1ad60abe1a81033d58599726d67a68d0cd0eb34305c4e223"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "b6aa38efdd70c584df1d754cd59b457b6a0311112b88dcb98a28d336e8dc532d",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
+          "withMetadata": "25084cec0e7a59987e76d19639589a880f850796f67b167bbbae06820a06cf4e",
+          "withoutMetadata": "c8388f06ddcc4f21a881c137cb0159e64bc92a06bbdcc2687f67912e29fbfad3",
+          "linkedWithoutMetadata": "c8388f06ddcc4f21a881c137cb0159e64bc92a06bbdcc2687f67912e29fbfad3"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "1e3a5b9bcbfb9f8d9fd687692411ee2c009899667e5c3573623d0b97cd6ee253",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
+          "withMetadata": "c5d7c9902ebf1c6c97fb7538b3e31b1b5e797e4c01213bcdfefcd66efadc5474",
+          "withoutMetadata": "13245aa8309e028d2cce29e76de192dd2cbbb9b416d197fc81e66cd162edd97d",
+          "linkedWithoutMetadata": "13245aa8309e028d2cce29e76de192dd2cbbb9b416d197fc81e66cd162edd97d"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "e3fc558b18ce288c37025aff31262f12f434838dfdd2cff063f983cc792d70e4",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
+          "withMetadata": "b6bae0e103b29ef2a27b96e927bed7baeb356250a4d2ee41b465708b9e2a91a5",
+          "withoutMetadata": "02b10c30e9bd27f014ea2f08a00f1a86b20d4df0281c072cc0727e51b6ac71f6",
+          "linkedWithoutMetadata": "02b10c30e9bd27f014ea2f08a00f1a86b20d4df0281c072cc0727e51b6ac71f6"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "928314e83f4b7db2daf12a2d71d3e8d7c6828a0dee94870899427c05568f9628",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
+          "withMetadata": "5222a9a3a95b1a842e1a2a45ebe9561e2491455438380dd66d870b1dec3ed500",
+          "withoutMetadata": "6f8ad2acde5a2dad90397fc0a32c89643b7fc1f1f5e8ed27f19c5357cdf6b179",
+          "linkedWithoutMetadata": "6f8ad2acde5a2dad90397fc0a32c89643b7fc1f1f5e8ed27f19c5357cdf6b179"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "ce6ed4d19f949d11ba9b20bdf7831cd18258fbb02b224f54907d526ece55ea31",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
+          "withMetadata": "b5078d2f1545e2f175bfb845c1f393a69f5462ab2ca1a6ee88f4afe06dcfaac5",
+          "withoutMetadata": "2027b4f717dcc124784479fb5926c8eefe8d4fde11f475046f173635b9ce9545",
+          "linkedWithoutMetadata": "2027b4f717dcc124784479fb5926c8eefe8d4fde11f475046f173635b9ce9545"
+        },
+        "inherit": [
+          "IRewardDistributionRecipient",
+          "Ownable",
+          "Context",
+          "TokenWrapper"
+        ],
+        "libraries": [
+          "Math"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "OKTPool",
+            "src": "contracts/Pool/OKTPool.sol:76"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DURATION",
+            "src": "contracts/Pool/OKTPool.sol:58"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/Pool/OKTPool.sol:59"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "periodFinish",
+            "src": "contracts/Pool/OKTPool.sol:61"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "rewardRate",
+            "src": "contracts/Pool/OKTPool.sol:62"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OKTPool",
+              "label": "Lemd",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:57"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "DURATION",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:58"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "decimals",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:59"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "starttime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:60"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "periodFinish",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:61"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardRate",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:62"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "lastUpdateTime",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:63"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewardPerTokenStored",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:64"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "maximum",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:65"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "userRewardPerTokenPaid",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:66"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "rewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:67"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "deposits",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:68"
+            },
+            {
+              "contract": "OKTPool",
+              "label": "invites",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/Pool/OKTPool.sol:69"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenWrapper": {
+        "version": {
+          "withMetadata": "24b07f1557eee64cf620e0f60a96a450c5d40d79a8e14a7412eabc12e15bff3b",
+          "withoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6",
+          "linkedWithoutMetadata": "00ff71c9520aa96bddd2476e711cded98aef6b566a631a1065e0fe5f0629faa6"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenWrapper",
+              "label": "token",
+              "type": "t_contract(IERC20)582",
+              "src": "contracts/Pool/OKTPool.sol:14"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/Pool/OKTPool.sol:16"
+            },
+            {
+              "contract": "TokenWrapper",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/Pool/OKTPool.sol:17"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)582": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:26"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Math": {
+        "version": {
+          "withMetadata": "e3a0203dd0335e65d0d6d388267162e24b65166f0f7f96311c7b76d32d3d19b5",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "version": {
+          "withMetadata": "47a4e7878be1093a745271c6bff8f731045c677459cdd0a936a1925afca13426",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "version": {
+          "withMetadata": "e832b7e3ac7bb1c02008ae5c98c2c5fae49d6c625dd637761bc3c3e4298ed5b3",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "version": {
+          "withMetadata": "1bd4fb567ab9406ea5b9fc74d950894a8b49d5522532f456c59782d20f9ad360",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionRecipient": {
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "IRewardDistributionRecipient",
+              "label": "rewardDistribution",
+              "type": "t_address",
+              "src": "contracts/Pool/IRewardDistributionRecipient.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Decimals": {
+        "inherit": [],
+        "libraries": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OKTPool": {
+        "version": {
           "withMetadata": "1fdc346a467aa1ddd525f3a6c2f172d1d3cec70a335d191375d8e2b81e306d20",
           "withoutMetadata": "4ce26079290805979558505ac159405c9ccc6c73476a04c7c4bb033cdba3a296",
           "linkedWithoutMetadata": "4ce26079290805979558505ac159405c9ccc6c73476a04c7c4bb033cdba3a296"
