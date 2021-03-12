@@ -63,7 +63,7 @@ const Home = ({ t,router }) => {
           const stakeNum = await poolContract.methods.balanceOf(account).call()
           const lemondBalance = await lemondContract.methods.balanceOf(poolConfig.address).call()
           const invitedNum = await poolContract.methods.getTotalInviteCount(account).call()
-          
+          console.log(totalSupply,earnedNum,unStakeNum,stakeNum,lemondBalance)
           setStakeNum(stakeNum)
           setUnStakeNum(unStakeNum)
           setEarnedNum(earnedNum)
