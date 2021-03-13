@@ -337,7 +337,7 @@ const Home = ({ t,router }) => {
                         <p>Total LEMD to be airdropped : <b>1,000,000 LEMD</b><br/>
                         Period of airdrop: <b>12.00 UTC, Mar 12 to 12.00 UTC, Mar 22</b>
                         </p>
-
+                        <p>*Real minted LEMD for Airdrop Episode I will be distributed on a <b>1:1</b> basis before the official launch of OKExChain by further notice.</p>
                         <h1>Invite to Stake MORE!</h1>
                         <p>You can invite up to <b>4</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>400</b>.(100 up per invited person)</p>
                         <p>*Effect will be activated after invited person stakes in the pool.</p>
