@@ -74,7 +74,7 @@ Total Supply: <b>1,000,000,000</b><br />
  <b>15%</b> DAO Governance<br />
  <b>5%</b>   Eco-incentive + Initial Liquidity</p>
 
-<p>LEMD Contract:  <b>0x7D720E522A4019fAEFd7ccfe894a0D54577Ce138</b></p>
+<p>LEMD Token Contract:  <b>0xE667d8bD182D165D2E71cF72315bD117f6940094</b></p>
 
 <p>Lemond is a decentralized, open-source, autonomous non-custodial liquidity market protocol where users can participate as depositors or borrowers. Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralized (perpetually) or undercollateralized (one-block liquidity) fashion.</p>
  

@@ -223,23 +223,7 @@ const Home = ({ t,router }) => {
             </div>
             <div className={styles.farm_car}></div>
             <div className={styles.compound_time}>
-                <Timer
-                    formatValue={(value) =>
-                      `${value < 10 ? `0${value}` : value} `
-                    }
-                    initialTime={
-                      new Date('Thu, 12 Mar 2021 12:00:00 GMT').getTime() -
-                      new Date().getTime()
-                    }
-                    lastUnit="h"
-                    direction="backward"
-                  >
-                    {() => (
-                      <React.Fragment>
-                        <Timer.Hours />: <Timer.Minutes />: <Timer.Seconds />
-                      </React.Fragment>
-                    )}
-                  </Timer>
+                Mining
             </div>
         </div>
         <div className={styles.farm_list}>
@@ -331,7 +315,7 @@ const Home = ({ t,router }) => {
                         <h1>Invite to Stake MORE!</h1>
                         <p>You can invite up to <b>3</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>400</b>.(100 up per invited person)</p>
                         <p>*Effect will be activated after invited person stakes in the pool.</p>
-                        <h2>Invited peoples: <b>{invitedNum}</b></h2>
+                        <h2>Invited people: <b>{invitedNum}</b></h2>
                         <p>
                           <Clipboard
                             className={styles.btn} 
@@ -340,7 +324,7 @@ const Home = ({ t,router }) => {
                                 toast.dark('🚀 Copy success!', toastConfig)
                               }}
                             data-clipboard-text={`https://www.lemond.money/farm?inviter=${account}`}>
-                            Copy invite link & Share
+                            Copy Link & Share
                           </Clipboard>
                         </p>
                         <p>Click for <a target="_blank" href="https://lemondfinance.medium.com/lemond-x-okexchain-test-to-get-airdrop-cc48c26812f">detailed instructions.</a></p>
