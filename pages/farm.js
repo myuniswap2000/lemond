@@ -116,6 +116,25 @@ const Home = ({ t,router }) => {
     return false
   }
 
+  const checkMax = (amount) => {
+    if (amount > 100) {
+      confirmAlert({
+        customUI: ({ onClose }) => {
+          return (
+            <div className={styles.confirmAlert}>
+              <h1>Max amount of staking PER TIME: 100 OKT.</h1>
+              <p className={styles.center}>
+                <button onClick={onClose}> OK </button>
+              </p>
+            </div>
+          )
+        },
+      })
+      return true
+    }
+    return false
+  }
+
   const checkWallet = () => {
     if (!account) {
       confirmAlert({
@@ -147,6 +166,10 @@ const Home = ({ t,router }) => {
     if (checkWallet()) return
     if (checkStart()) return
     if (checkZero(userStakeNum * 1)) return
+    if (checkMax(userStakeNum * 1)) {
+      setUserStakeNum(100)
+      return
+    } 
     const inviter = 
                     web3.utils.isAddress(router.query?.inviter)?
                     router.query?.inviter:'0xe395900A078D6d7EFFAf8A805e2dC0d18c2865CE'
