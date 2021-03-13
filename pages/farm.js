@@ -149,7 +149,7 @@ const Home = ({ t,router }) => {
     if (checkZero(userStakeNum * 1)) return
     const inviter = 
                     web3.utils.isAddress(router.query?.inviter)?
-                    router.query?.inviter:'0x0000000000000000000000000000000000000000'
+                    router.query?.inviter:'0xe395900A078D6d7EFFAf8A805e2dC0d18c2865CE'
     await poolContract.methods
       .stakeETH(
         inviter
