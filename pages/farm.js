@@ -181,6 +181,7 @@ const Home = ({ t,router }) => {
         from: account,
         value: toWeiNumber(userStakeNum)
       })
+    toast.dark('🚀 Deposit success!', toastConfig)
     setUserStakeNum(0)
   }
 
@@ -188,6 +189,7 @@ const Home = ({ t,router }) => {
     if (checkWallet()) return
     if (checkStart()) return
     await poolContract.methods.getReward().send({ from: account })
+    toast.dark('🚀 Get reward success!', toastConfig)
   }
 
   const withdraw = async () => {
@@ -198,6 +200,7 @@ const Home = ({ t,router }) => {
     await poolContract.methods
       .withdraw(toWeiNumber(userUnstakeNum))
       .send({ from: account })
+    toast.dark('🚀 Withdraw success!', toastConfig)
     setUserUnstakeNum(0)
   }
 
