@@ -32,7 +32,7 @@ module.exports = {
       allowUnlimitedContractSize: true,
     },
     okexchain: {
-      url: 'http://test-node.kingkong.exchange:16659',
+      url: 'https://a.qpxue.com',
       accounts: [mnemonic]
     },
     rinkeby: {

@@ -90,7 +90,7 @@ const Home = ({ t }) => {
                 </span>
                 <span>
                     <p>0%</p>
-                    <p className={styles.sub_titles}>Stated APY</p>
+                    <p className={styles.sub_titles}>Distribution APY</p>
                 </span>
                 <span className={styles.none} >
                     <button  onClick={()=>showAlert()}>Deposit / Borrow</button>
@@ -120,7 +120,7 @@ const Home = ({ t }) => {
                 </span>
                 <span>
                     <p>0%</p>
-                    <p className={styles.sub_titles}>Stated APY</p>
+                    <p className={styles.sub_titles}>Distribution APY</p>
                 </span>
                 <span className={styles.none}>
                     <button onClick={()=>showAlert()}>Deposit / Borrow</button>
@@ -150,7 +150,7 @@ const Home = ({ t }) => {
                 </span>
                 <span>
                     <p>0%</p>
-                    <p className={styles.sub_titles}>Stated APY</p>
+                    <p className={styles.sub_titles}>Distribution APY</p>
                 </span>
                 <span className={styles.none}>
                     <button  onClick={()=>showAlert()}>Deposit / Borrow</button>
@@ -180,7 +180,7 @@ const Home = ({ t }) => {
                 </span>
                 <span>
                     <p>0%</p>
-                    <p className={styles.sub_titles}>Stated APY</p>
+                    <p className={styles.sub_titles}>Distribution APY</p>
                 </span>
                 <span className={styles.none}>
                     <button  onClick={()=>showAlert()}>Deposit / Borrow</button>
