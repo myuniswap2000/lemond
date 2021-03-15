@@ -339,7 +339,7 @@ const Home = ({ t,router }) => {
                         </p>
                         <p>*Real minted LEMD for Airdrop Episode I will be distributed on a <b>1:1</b> basis before the official launch of OKExChain by further notice.</p>
                         <h1>Invite to Stake MORE!</h1>
-                        <p>You can invite up to <b>4</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>400</b>.(100 up per invited person)</p>
+                        <p>You can invite up to <b>4</b> persons to increase your max amount of <b>OKT</b> for staking from <b>100</b> to <b>500</b>.(100 up per invited person)</p>
                         <p>*Effect will be activated after invited person stakes in the pool.</p>
                         <h2>Invited people: <b>{invitedNum}</b></h2>
                         <p>
